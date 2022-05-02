@@ -29,7 +29,7 @@ while count==1:
     for line in ser.read():
         #hex = hexlify(line) - step needed in python2
         #num=int(hex, 16)  - step needed in python2
-        num=num-4 # change "4" according to the button box you have (my button box counts from 5; 5-4 = index, 6-2 = middle,...)
+        num=num-4 # change "4" according to the button box you have (my button box counts from 5; 5-4 = index, 6-4 = middle,...)
         print(num) #print the button pressed
         #print(str(count) + str(': ') + chr(line) )
         count= count+1
