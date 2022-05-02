@@ -10,7 +10,8 @@ import serial.tools.list_ports as port_list
 ports = list(port_list.comports()) # search for the devices
 for p in ports: print (p)
 
-#once you find the port    
+#once you find the port  
+#in my case it is "/dev/ttyUSB0"
 ser = serial.Serial('/dev/ttyUSB0', 19200, timeout=1)
 
 
